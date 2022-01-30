@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+      :root {
+        --White: hsl(0, 0%, 100%);
+        --Light_gray: hsl(212, 45%, 89%);
+        --Grayish_blue: hsl(220, 15%, 55%);
+        --Dark_blue: hsl(218, 44%, 22%);
+      }
+
+      body,
+      html {
+        font-family: 'Outfit';
+        background-color: var(--Light_gray);
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: gray;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .card {
+        background-color: var(--White);
+        margin: auto;
+        width: 70%;
+        max-width: 25rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+
+        text-align: center;
+      }
+
+      .qr-card img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="qr-card"><img src="./images/image-qr-code.png" alt="" /></div>
+      <h2>Improve your front-end skills by building projects</h2>
+
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Diaz Ignacio</a>.
+    </div>
+  </body>
+</html>
